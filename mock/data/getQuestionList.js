@@ -8,7 +8,7 @@ function getQuestionList(opt = {}) {
   let list = [];
   for (let i = 0; i < LEN; i++) {
     list.push({
-      id: i + 1,
+      id: Random.id(),
       title: Random.ctitle(5, 10),
       isPubished: Random.boolean(),
       isStar,

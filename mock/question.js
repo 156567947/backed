@@ -36,6 +36,7 @@ module.exports = [
     url: "/api/question",
     method: "get",
     response(ctx) {
+      console.log(ctx);
       const { url = "", query = {} } = ctx;
       const isDeleted = url.includes("isDeleted=true");
       const isStar = url.includes("isStar=true");
